@@ -187,6 +187,7 @@ body {
 	background: #fff;
 	text-align: center;
 }
+.hero-fullview picture,
 .hero-fullview img {
 	display: block;
 	width: 100%;
@@ -270,7 +271,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 	<div class="conts">
 		<!--Main Visual-->
-				<p class="in_main hero-fullview"><img src="hero.jpg" alt="NAORU Seitai Shibuya Branch"></p>
+				<p class="in_main hero-fullview">
+					<picture>
+						<source media="(max-width: 768px)" srcset="hero-sp.jpg">
+						<img src="hero.jpg" alt="NAORU Seitai Shibuya Branch">
+					</picture>
+				</p>
 			</div>
 
 
